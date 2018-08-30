@@ -34,4 +34,4 @@ The code builds on:
 
 Korasidis Nikolaos <nkorasid@student.ethz.ch>, Lamberti Lisa <lmlamberti@bsse.ethz.ch>
 
-* Initial release: August 2018 
+_Initial release: August 2018_
