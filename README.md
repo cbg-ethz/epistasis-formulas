@@ -11,9 +11,9 @@ These interactions are described in A.L Gould et al's work on [High-dimensional 
 
 * This code can also compute the intervals in which the results of the above interactions are contained by knowing the intervals in which the starting measurments are contained: for instance, average measurement +/- SE. 
 
-    * Example: if each measurment w_{-} belongs to the interval [w_{-}-SE,w_{-}+SE], then our code coutputs the bounds of the interval [a,b] containing for instance the 2-way interaction
+    * Example: if each measurment w_X belongs to the interval [w_X-SE,w_X+SE], then our code coutputs the bounds of the interval [a,b] containing for instance the 2-way interaction
 
-        w_{00000}+w_{00011}-w_{00001}-w_{00010} . 
+        w_00000+w_00011-w_00001-w_00010 . 
 
 Similarly, the code computes all other intervals for the various higher-order interactions described above.
 
