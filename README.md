@@ -1,20 +1,25 @@
 # Description:
 
-This Python code computes higher-order interactions such as 2-way, 3-way,…, n-way interaction coordinates and some circuits in the n-locus case taking as input 2^n experimental measurements.
-This code can also be used to compute the intervals in which the above interactions are contained if the starting measurements are given as intervals. 
+This Python code computes higher-order interactions such as 2-way, 3-way,…, n-way interaction coordinates and some circuits in the n-species (or loci in genetics) case taking as input 2^n experimental measurements.
+These interactions are described in A.L Gould et al work on [High-dimensional microbiome interactions shape host fitness                                                                                                                        ](https://www.biorxiv.org/content/early/2018/06/01/232959.1).
 
-For instance, if w_{00} belongs to the interval [x_1,x_2],
-w_{11} belongs to [x_3,x_4], w_{10} to [x_5,x_6]$ and
-w_{01} to[x_7,x_8], for some real numbers, then our code can be used to deduce the values of a=x_1+x_4-x_6-x_8 and b=x_2+x_4-x_5-x_7 such that the 2-way interaction
-
-w_{00}+w_{11}-w_{01}-w_{10}
-
-is contained in [a,b].
 
 
 # Instructions:
 
-To compute all interactions insert manually experimental data in the epistasis.py file and run. Currently, the program is set to work in the 5-locus case, but it can be altered easily to analyze interactions in the n-locus case.
+To compute the above mentioned interactions insert manually experimental data and standard error measurements in the epistasis.py file and run. Currently, the program is set to work in the 5-locus case, but it can be altered easily to analyze interactions in the n-locus case. 
+
+This code can also be used to compute the intervals in which the results of the above interactions are contained by knowing the intervals in which the starting measurments are contained: for instance, average measurement +/- SE. 
+
+* Example: if the measurment w_{00} belongs to the interval [w_{00}-SE,w_{00}+SE],
+w_{11} belongs to [w_{11}-SE,w_{11}+SE], w_{10} to [w_{10}-SE,w_{10}+SE] and
+w_{01} to[w_{01}-SE,w_{01}+SE], then our code coutputs the bounds of the
+interval [a,b] containing for instance the 2-way interaction
+
+w_{00}+w_{11}-w_{01}-w_{10}. 
+
+Similarly, the code computes all other intervals for the various higher-order interactions described above.
+
 
 
 # Observation: 
