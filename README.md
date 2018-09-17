@@ -15,7 +15,7 @@ These interactions are described in A.L Gould et al's work on [High-dimensional 
 
         w_00000+w_00011-w_00001-w_00010 . 
 
-Similarly, the code computes all other intervals for the various higher-order interactions described above.
+        Similarly, the code computes all other intervals for the various higher-order interactions described above.
 
 
 
