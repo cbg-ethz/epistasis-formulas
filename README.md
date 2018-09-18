@@ -18,13 +18,23 @@ These interactions are described in A.L Gould et al's work on [High-dimensional 
         Similarly, the code computes all other intervals for the various higher-order interactions described above.
 
 
+# Dependencies:
+
+* [NumPy](http://www.numpy.org/): Python interface to store and operate on numerical arrays
+* [Itertools](https://docs.python.org/2/library/itertools.html): Python module used to creat iterators
+
+The epistasis.py file uses the code contained in the following files:
+
+* Circuits.py: generates all 2 and 3 dimensional circuit interactions inside n-dimensional hypercubes.
+* Fourier.py: module written to compute interactions coordinates as described in equation 8 in N. Beerenkinkel et al, [Epistasis and shapes of fitness landscapes](http://www3.stat.sinica.edu.tw/statistica/oldpdf/A17n43.pdf)
+* Slicing.py: generates all possible contexts for circuit and interaction coordinates.
+* Utlis.py: minor module with additional codes used in the above files.
 
 # Observation: 
 
-The code builds on:
-* Python sequences. In particular tuple/list/dict comprehensions, generators and 'yield   from' idioms have been extensively applied to delegate a lot of data manipulation to Python.
-* The package NumPy. Tensors and slicing determine how the fitness projections are created. Only simple mathematical operators are used (inner product, matrix product).
-* Elementary interval arithmetics.
+The code builds on:  Python sequences. In particular tuple/list/dict comprehensions, generators and 'yield   from' idioms have been extensively applied to delegate a lot of data manipulation to Python. Only simple mathematical operators are used (inner product, matrix product). Elementary interval arithmetics.
+
+
 
 # References:
 
